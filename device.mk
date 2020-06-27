@@ -77,7 +77,7 @@ PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
 PRODUCT_PACKAGES += \
-    omni_charger_res_images \
+    pixel_charger_res_images \
     animation.txt \
     font_charger.png
 
