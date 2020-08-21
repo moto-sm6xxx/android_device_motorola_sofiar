@@ -59,7 +59,6 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/motorola/trinket
 TARGET_KERNEL_CONFIG := vendor/sofiar_defconfig
-BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
 	DTC=$(OUT_DIR)/../device/motorola/sofiar/dtc/dtc
 TARGET_KERNEL_VERSION := 4.14
