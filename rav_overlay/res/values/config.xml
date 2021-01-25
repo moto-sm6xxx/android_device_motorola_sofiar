@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="config_mainBuiltInDisplayCutout">M -380,0 L -276,0 L -276,68 L -380,68 Z</string>
+    <string name="config_mainBuiltInDisplayCutout">M 80,0 L 0,0 L 0,80 L 80,80 Z @left</string>
     <string name="config_mms_user_agent">motog8</string>
     <string name="wifi_tether_configure_ssid_default">moto g(8)</string>
     <integer-array name="config_autoBrightnessDisplayValuesNits">
@@ -65,7 +65,7 @@
     <integer-array name="config_virtualKeyVibePattern">
         <item>34</item>
     </integer-array>
-    <dimen name="quick_qs_offset_height">71.0px</dimen>
-    <dimen name="status_bar_height">71.0px</dimen>
-    <dimen name="status_bar_height_portrait">71.0px</dimen>
+    <dimen name="quick_qs_offset_height">78.0px</dimen>
+    <dimen name="status_bar_height">78.0px</dimen>
+    <dimen name="status_bar_height_portrait">78.0px</dimen>
 </resources>
