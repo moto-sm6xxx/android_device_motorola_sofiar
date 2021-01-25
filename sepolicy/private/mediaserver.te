@@ -1,0 +1,2 @@
+get_prop(mediaserver, vendor_sys_video_prop);
+
