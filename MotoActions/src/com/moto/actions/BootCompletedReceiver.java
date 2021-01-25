@@ -42,6 +42,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     static final String TAG = "MotoActions";
     final String NAVBAR_SHOWN = "navbar_shown";
     static final String ravOverlayPackageName = "org.omnirom.overlay.moto.rav";
+    static final String sofiaOverlayPackageName = "org.omnirom.overlay.moto.sofia";
 
     private ServiceWrapper mServiceWrapper;
     private static OverlayManager sOverlayService;
@@ -67,6 +68,13 @@ public class BootCompletedReceiver extends BroadcastReceiver {
                     UserHandle.myUserId()).isEnabled();
                 if (!isEnabled) {
                     sOverlayService.setEnabled(ravOverlayPackageName, true,
+                        UserHandle.myUserId());
+                }
+            } else {
+                 boolean isEnabled = sOverlayService.getOverlayInfo(sofiaOverlayPackageName,
+                    UserHandle.myUserId()).isEnabled();
+                if (!isEnabled) {
+                    sOverlayService.setEnabled(sofiaOverlayPackageName, true,
                         UserHandle.myUserId());
                 }
             }
