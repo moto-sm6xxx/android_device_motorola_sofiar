@@ -22,7 +22,5 @@
 
 # MotoActions
 /sys/homebutton(/.*)?                                    u:object_r:sysfs_homebutton:s0
-/sys/class/sensors/dt-gesture(/.*)?                                    u:object_r:sysfs_homebutton:s0
-/sys/devices/virtual/input/input8/dt-gesture(/.*)?       u:object_r:sysfs_homebutton:s0
 
 /system/bin/copy_ab_partitions\.sh            u:object_r:otapreopt_chroot_exec:s0
