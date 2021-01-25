@@ -23,7 +23,7 @@ LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res
 
 LOCAL_PROGUARD_ENABLED := disabled
-LOCAL_DEX_PREOPT := false
+LOCAL_DEX_PREOPT := true
 
 include frameworks/base/packages/SettingsLib/common.mk
 
