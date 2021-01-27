@@ -20,14 +20,8 @@
      "/system/framework/" should be the target directory.
         e.g. "/system/framework/eg-telephony-common.jar"
 -->
-<injection package="com.qualcomm.qti.internal.telephony.QtiTelephonyComponentFactory"
-           jar="/system_ext/framework/qti-telephony-common.jar:/system/framework/qti-telephony-common.jar:/product/framework/qti-telephony-common.jar:/system_ext/framework/qti-telephony-hidl-wrapper.jar:/product/framework/qti-telephony-utils.jar:/system_ext/framework/qti-telephony-utils.jar">
+<injection jar="/system_ext/framework/qti-telephony-common.jar:/system_ext/framework/qti-telephony-hidl-wrapper.jar:/system_ext/framework/qti-telephony-utils.jar:/system_ext/framework/qcom-moto-telephony-ext.jar:/system/framework/telephony-ext.jar:/system_ext/framework/telephony-ext.jar:/system/framework/moto-telephony.jar:/system_ext/framework/qcom-moto-ims-ext.jar:/system/framework/moto-ims-ext.jar:/system/framework/moto-settings.jar" package="com.qualcomm.qti.internal.telephony.QtiTelephonyComponentFactory">
     <components>
-        <!-- Components use injected component factory,
-            e.g. com.android.internal.telephony.ServiceStateTracker
-        -->
-        <!--<component>com.example.componentA</component>-->
-        <!--<component>com.example.componentB</component>-->
         <component>com.android.internal.telephony.ServiceStateTracker</component>
         <component>com.android.internal.telephony.SubscriptionController</component>
         <component>com.android.internal.telephony.SubscriptionInfoUpdater</component>
@@ -36,7 +30,7 @@
         <component>com.android.internal.telephony.IccPhoneBookInterfaceManager</component>
         <component>com.android.internal.telephony.dataconnection.DcTracker</component>
         <component>com.android.internal.telephony.RIL</component>
+        <component>com.motorola.android.internal.telephony.ExtTelephonyUtils</component>
         <component>com.android.internal.telephony.TelephonyComponentFactory</component>
-        <component>com.android.internal.telephony.MultiSimSettingController</component>
     </components>
 </injection>
