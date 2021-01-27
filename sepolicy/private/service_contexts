@@ -16,9 +16,12 @@ nfc.st_ext                                u:object_r:nfc_service:s0
 nfc_settings                              u:object_r:nfc_service:s0
 climanager                                u:object_r:mot_climanager_service:s0
 motoexttelephony                          u:object_r:mot_radio_service:s0
+motoextims                                u:object_r:mot_radio_service:s0
+moto_extend_service                       u:object_r:mot_system_service:s0
 moto_ext_hw_service                       u:object_r:mot_system_service:s0
 moto_ext_telephony.registry               u:object_r:mot_system_service:s0
 singlehand_fold_service                   u:object_r:mot_system_service:s0
+moto_desktop_service                      u:object_r:mot_system_service:s0
 media.eqservice                           u:object_r:audioserver_service:s0
 com.broadcom.nfc.Factory                  u:object_r:nfc_service:s0
 com.vzw.nfc.AidFilter                     u:object_r:nfc_service:s0
